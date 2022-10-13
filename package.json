@@ -10,7 +10,8 @@
     "fix:eslint": "eslint --cache --fix src",
     "fix:prettier": "prettier --loglevel warn --cache --write src",
     "format": "npm run fix:eslint && npm run fix:prettier",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",

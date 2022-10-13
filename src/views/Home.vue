@@ -1,20 +1,16 @@
 <template>
-  <router-view />
-  {{t}}
+  <v-container>
+    This is Scaffold for Vite vue TS
+  </v-container>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "App",
-
-  components: {},
-
+  name: "AboutPage",
   data() {
-    return {
-      t: import.meta.env.VITE_MY_TITLE
-    };
+    return {};
   },
 });
 </script>

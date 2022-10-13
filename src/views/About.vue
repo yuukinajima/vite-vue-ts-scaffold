@@ -1,20 +1,14 @@
 <template>
-  <router-view />
-  {{t}}
+  <v-container> About </v-container>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "App",
-
-  components: {},
-
+  name: "TestPage",
   data() {
-    return {
-      t: import.meta.env.VITE_MY_TITLE
-    };
+    return {};
   },
 });
 </script>
