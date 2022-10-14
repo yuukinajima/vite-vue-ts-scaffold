@@ -4,10 +4,9 @@ import About from "@/views/About.vue";
 import GH404 from "@/components/GH404Handler.vue";
 
 const routes = [
-  { path: "/", component: Home },
-  { path: "/test", component: About },
-  { path: "/about", component: About },
-  
+  { path: "/", component: Home, strict: true },
+  { path: "/about", component: About, strict: true },
+  { path: "/about/", redirect: "/about", strict: true },
 ];
 
 const router = createRouter({

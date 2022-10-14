@@ -8,8 +8,8 @@ import HelloWorld from "@/components/HelloWorld.vue";
 
 export default defineComponent({
   name: "TestPage",
-  components:{
-    HelloWorld
+  components: {
+    HelloWorld,
   },
   data() {
     return {};
