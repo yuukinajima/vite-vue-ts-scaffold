@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/vite-vue-ts-scaffold/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // GitHub Pages での SPA アドレス解決用
+      (function () {
+        const query = window.location.search;
+        if (query.startsWith("?p=")) {
+          const route = decodeURIComponent(query.substr(3));
+          window.history.replaceState(null, null, route);
+        }
+      })();
+    </script>
     <title></title>
-  <script type="module" crossorigin src="/vite-vue-ts-scaffold/assets/index.8f1f4ccb.js"></script>
-  <link rel="stylesheet" href="/vite-vue-ts-scaffold/assets/index.d74d8a59.css">
-</head>
+    <script type="module" crossorigin src="/vite-vue-ts-scaffold/assets/index.8f1f4ccb.js"></script>
+    <link rel="stylesheet" href="/vite-vue-ts-scaffold/assets/index.d74d8a59.css">
+  </head>
 
-<body>
-
+  <body>
     <div id="app"></div>
     
-</body>
-
+  </body>
 </html>
