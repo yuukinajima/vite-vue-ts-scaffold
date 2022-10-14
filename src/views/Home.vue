@@ -1,6 +1,26 @@
 <template>
   <v-container>
-    This is Scaffold for Vite vue TS
+
+    <v-card variant="outlined">
+      <v-card-item>
+      <div>
+        <div class="text-overline mb-1">
+          OVERLINE
+        </div>
+        <div class="text-h6 mb-1">
+          About
+        </div>
+        <div class="text-caption">move to Vuetify generate page</div>
+        <v-card-actions>
+      <v-btn variant="outlined" to="/about">
+        Move
+      </v-btn>
+    </v-card-actions>
+      </div>
+    </v-card-item>
+    </v-card>
+
+
   </v-container>
 </template>
 
