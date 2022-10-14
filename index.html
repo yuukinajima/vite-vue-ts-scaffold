@@ -8,14 +8,14 @@
       // GitHub Pages での SPA アドレス解決用
       (function () {
         const query = window.location.search;
-        if (query.startsWith("?p=")) {
-          const route = decodeURIComponent(query.substr(3));
+        if (query.startsWith("?")) {
+          const route = decodeURIComponent(query.substr(1));
           window.history.replaceState(null, null, route);
         }
       })();
     </script>
     <title></title>
-    <script type="module" crossorigin src="/vite-vue-ts-scaffold/assets/index.072235a1.js"></script>
+    <script async type="module" crossorigin src="/vite-vue-ts-scaffold/assets/index.072235a1.js"></script>
     <link rel="stylesheet" href="/vite-vue-ts-scaffold/assets/index.d74d8a59.css">
   </head>
 
