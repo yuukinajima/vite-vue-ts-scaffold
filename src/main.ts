@@ -7,4 +7,3 @@ import router from "./router";
 loadFonts();
 
 createApp(App).use(vuetify).use(router).mount("#app");
-console.log(import.meta.env.BASE_URL);

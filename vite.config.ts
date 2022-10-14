@@ -18,6 +18,16 @@ export default defineConfig(({mode}) => {
       process.env.NODE_ENV === "production" ? "/vite-vue-ts-scaffold/" : "./",
     build: {
       outDir: "dist",
+      emptyOutDir: true, 
+      rollupOptions: {
+        input: {
+          main: resolve(__dirname, 'index.html'),
+          "404": resolve(__dirname, '404.html')
+        },
+      },
+    },
+    esbuild: {
+      drop: process.env.NODE_ENV === "production" ? ['console', 'debugger'] : [],
     },
   };
 });
