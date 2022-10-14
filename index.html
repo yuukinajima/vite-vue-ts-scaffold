@@ -10,6 +10,7 @@
         const redirectFlg = "?fromgh404/";
         const query = window.location.search;
         if (query.startsWith(redirectFlg)) {
+          console.log("handle 404 redirect on ghpage");
           const route = decodeURIComponent(query.substr(redirectFlg.length));
           window.history.replaceState(null, null, route);
         }
