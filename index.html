@@ -4,46 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/vite-vue-ts-scaffold/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-      // GitHub Pages での SPA アドレス解決用
-      // (function () {
-      //   const redirectFlg = "?fromgh404=/";
-      //   const query = window.location.search;
-      //   if (query.startsWith(redirectFlg)) {
-      //     console.log("handle 404 redirect on ghpage");
-      //     const route = decodeURIComponent(query.substr(redirectFlg.length));
-      //     window.history.replaceState(null, null, route);
-      //   }
-      // })();
-
-
-      // (function(l) {
-      //   if (l.search[1] === '/' ) {
-      //     var decoded = l.search.slice(1).split('&').map(function(s) { 
-      //       return s.replace(/~and~/g, '&')
-      //     }).join('?');
-      //     window.history.replaceState(null, null,
-      //         l.pathname.slice(0, -1) + decoded + l.hash
-      //     );
-      //   }
-      // }(window.location))
-
-
-      (function(l) {
-        const redirectFlg = "?fromgh404=/";
-        if (l.search.startsWith(redirectFlg) ) {
-          console.log("handle 404 redirect on ghpage");
-          var decoded = l.search.slice(redirectFlg.length).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, '',
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
     <title></title>
-    <script async type="module" crossorigin src="/vite-vue-ts-scaffold/assets/index.072235a1.js"></script>
+    <script async type="module" crossorigin src="/vite-vue-ts-scaffold/assets/main.a8becc0c.js"></script>
     <link rel="stylesheet" href="/vite-vue-ts-scaffold/assets/index.d74d8a59.css">
   </head>
 
