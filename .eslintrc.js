@@ -4,11 +4,11 @@ module.exports = {
     node: true,
   },
   extends: [
-    'plugin:vue/vue3-recommended',
-    'eslint:recommended',
-    '@vue/eslint-config-typescript/recommended',
+    "plugin:vue/vue3-recommended",
+    "eslint:recommended",
+    "@vue/eslint-config-typescript/recommended",
   ],
   rules: {
-    'vue/multi-word-component-names': 'off',
+    "vue/multi-word-component-names": "off",
   },
-}
+};
