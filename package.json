@@ -1,12 +1,6 @@
 {
   "name": "githubpage-vue3-ts-pinia-vuetify",
   "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --fix --ignore-path .gitignore"
-  },
   "dependencies": {
     "@mdi/font": "7.0.96",
     "pinia": "^2.0.23",
@@ -28,5 +22,11 @@
     "vite": "^4.2.0",
     "vite-plugin-vuetify": "^1.0.0",
     "vue-tsc": "^1.2.0"
+  },
+  "scripts": {
+    "build": "vue-tsc --noEmit && vite build",
+    "dev": "vite",
+    "lint": "eslint . --fix --ignore-path .gitignore",
+    "preview": "vite preview"
   }
 }
